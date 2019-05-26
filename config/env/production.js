@@ -60,15 +60,15 @@ module.exports = {
       //--------------------------------------------------------------------------
 
       /****************************************************************************
-      *                                                                           *
+      *                                                                           *
       * More adapter-specific options                                             *
-      *                                                                           *
+      *                                                                           *
       * > For example, for some hosted PostgreSQL providers (like Heroku), the    *
       * > extra `ssl: true` option is mandatory and must be provided.             *
-      *                                                                           *
-      * More info:                                                                *
-      * https://sailsjs.com/config/datastores                                     *
-      *                                                                           *
+      *                                                                           *
+      * More info:                                                                *
+      * https://sailsjs.com/config/datastores                                     *
+      *                                                                           *
       ****************************************************************************/
       // ssl: true,
 
@@ -148,9 +148,11 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cors: {
-      allowOrigins: [
-         'https://example.com',
-       ]
+      // allowOrigins: [
+      //   'https://example.com',
+      // ]
+      allRoutes: true,
+      allowOrigins: '*'
     },
 
   },
@@ -221,7 +223,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cookie: {
-       secure: false,
+      // secure: true,
       maxAge: 24 * 60 * 60 * 1000,  // 24 hours
     },
 
@@ -250,10 +252,10 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-     onlyAllowOrigins: [
-       'https://training-app-jairo.herokuapp.com/',
-       'https://staging.example.com'
-     ],
+    // onlyAllowOrigins: [
+    //   'https://example.com',
+    //   'https://staging.example.com',
+    // ],
 
 
     /***************************************************************************
@@ -322,7 +324,7 @@ module.exports = {
     * (https://sailsjs.com/config/http)                                        *
     *                                                                          *
     ***************************************************************************/
-    trustProxy: true
+    trustProxy: true,
 
   },
 
