@@ -256,6 +256,8 @@ module.exports = {
     //   'https://example.com',
     //   'https://staging.example.com',
     // ],
+    allRoutes: true,
+    allowOrigins: '*'
 
 
     /***************************************************************************
