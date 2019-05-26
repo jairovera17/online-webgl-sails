@@ -148,9 +148,9 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cors: {
-      // allowOrigins: [
-      //   'https://example.com',
-      // ]
+      allowOrigins: [
+         'https://example.com',
+       ]
     },
 
   },
@@ -221,7 +221,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cookie: {
-       secure: true,
+       secure: false,
       maxAge: 24 * 60 * 60 * 1000,  // 24 hours
     },
 
@@ -252,7 +252,7 @@ module.exports = {
     ***************************************************************************/
      onlyAllowOrigins: [
        'https://training-app-jairo.herokuapp.com/',
-       'https://staging.example.com',
+       'https://staging.example.com'
      ],
 
 
